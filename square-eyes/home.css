@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+   min-height: 100vh;
+}
+
+.poster{
+   width: 400px;
+   height: 600px;
+   border: 1px solid white;
+   border-radius: 6px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+.sidebar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* Styling for sidebar links */
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: blueviolet;
+}
+
+
+svg{
+    width: 20px;
+    height: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#filterButtons{
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 1.5rem;
+}
+button{
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.movie-container{
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.movie-card{
+    max-width: 400px;
+    display: flex;
+    min-height: fit-content;
+flex-direction: column;
+}
+.movie-details{
+    /* height: 100%; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.genre{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.description{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1rem;
+    display: flex;
+    text-align: center;
+}
+.price{
+    color: blueviolet;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.rating{
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid gold;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.price-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.disc-price{
+    color: gold;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.price-disc{
+    font-family: 'Montserrat', sans-serif;
+    color: blueviolet;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.buy{
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.buy:hover{
+    background-color: rgb(180, 127, 229);
+}
+.notification {
+    display: none;
+}
+
+.notification.hidden {
+    display: none;
+}
+
+.notification.visible {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+}
