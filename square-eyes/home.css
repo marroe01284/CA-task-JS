@@ -28,9 +28,8 @@ nav ul {
     gap: 3rem;
 }
 .cart{
-    display: flex;
-    align-items: center;
-    padding-right: 2rem;
+    display: none;
+    
 }
 .sidebar {
     list-style-type: none;

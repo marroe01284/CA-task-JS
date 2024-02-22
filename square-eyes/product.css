@@ -89,3 +89,14 @@ button{
 button:hover{
     background-color: rgb(180, 127, 229);
 }
+.cartNotification{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+}
