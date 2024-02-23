@@ -15,7 +15,7 @@ function displayMovies() {
 }
 
 function renderMovies(movies) {
-    movieContainer.innerHTML = ""; // Clear existing content
+    movieContainer.innerHTML = "";
     movies.forEach(movie => {
         const movieCard = createMovieCard(movie);
         movieContainer.appendChild(movieCard);
@@ -42,7 +42,7 @@ function createMovieCard(movie) {
                 ${priceElement}
             </div>
             <a href="product.html?id=${movie.id}">
-                <button class="buy">Buy movie</button>
+                <button class="buy">Watch Movie</button>
             </a>
         </div>
         </div>`;
@@ -50,8 +50,7 @@ function createMovieCard(movie) {
     return movieCard;
 }
 function createGenreButtons(movies) {
-    // Clear existing buttons
-    // filterButtonsContainer.innerHTML = "";
+    filterButtonsContainer.innerHTML = "";
 
     const genres = [...new Set(movies.map(movie => movie.genre))];
     genres.forEach(genre => {
@@ -60,7 +59,12 @@ function createGenreButtons(movies) {
         button.onclick = () => filterMovies(genre);
         filterButtonsContainer.appendChild(button);
     });
+    const showAllButton = document.createElement("button");
+    showAllButton.textContent = "Show All";
+    showAllButton.onclick = () => displayAllMovies();
+    filterButtonsContainer.appendChild(showAllButton);
 }
+
 
 function filterMovies(genre) {
     fetch("https://api.noroff.dev/api/v1/square-eyes")
