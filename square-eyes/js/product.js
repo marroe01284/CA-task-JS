@@ -34,11 +34,26 @@ let selectedMovie;
 
 console.log(addToCartButton)
 console.log(selectedMovie)
+function updateCartCounterOnLoad() {
+    const cartArray = JSON.parse(localStorage.getItem("squareEyesCart")) || [];
+    const cartCounter = document.querySelector(".cartNotification");
+    if (cartCounter) {
+        const cartArrayLength = cartArray.length;
+        cartCounter.textContent = cartArrayLength.toString();
+        cartCounter.style.display = cartArrayLength > 0 ? "flex" : "none";
+    } else {
+        console.error("Cart counter element not found.");
+    }
+}
+
+
+updateCartCounterOnLoad();
+
 document.addEventListener("click", (event) => {
     if (event.target.classList.contains("add-btn")) {
         carArray.push(selectedMovie);
         localStorage.setItem("squareEyesCart", JSON.stringify(carArray));
-        updateCartCounter()
+        updateCartCounter();
     }
 });
 
@@ -46,14 +61,8 @@ function updateCartCounter() {
     const cartCounter = document.querySelector(".cartNotification");
     if (cartCounter) {
         const cartArrayLength = carArray.length;
-        cartCounter.textContent = cartArrayLength.toString(); // Update the text content with the cart array length
-
-        // Toggle the display style based on the cart array length
-        if (cartArrayLength === 0) {
-            cartCounter.style.display = "none"; // Hide the cart counter if the array is empty
-        } else {
-            cartCounter.style.display = "flex"; // Show the cart counter if the array has items
-        }
+        cartCounter.textContent = cartArrayLength.toString();
+        cartCounter.style.display = cartArrayLength > 0 ? "flex" : "none"; 
     } else {
         console.error("Cart counter element not found.");
     }
