@@ -1,15 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-body{
+
+body {
     background-color: black;
 }
-nav{
+
+nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 3rem;
 }
+
 nav ul {
     width: 100%;
     list-style: none;
@@ -18,6 +21,7 @@ nav ul {
     align-items: center;
     gap: 3rem;
 }
+
 .sidebar {
     list-style-type: none;
     padding: 0;
@@ -41,36 +45,40 @@ nav ul {
 .sidebar a:hover {
     color: blueviolet;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-h1{
+
+h1 {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     margin-bottom: 100px;
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-.order-summary{
+
+.order-summary {
     border-radius: 6px;
     width: 50vw;
     padding: 0px;
 
 }
-.checkoutProductCard{
+
+.checkoutProductCard {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
     padding-bottom: 100px;
-   
+
 }
 
-.checkoutProductCardDetails{
+.checkoutProductCardDetails {
     color: white;
     font-size: 1.5rem;
     display: flex;
@@ -78,7 +86,8 @@ font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     align-items: center;
 }
-.checkoutTotal{
+
+.checkoutTotal {
     color: white;
     display: flex;
     justify-content: flex-end;
@@ -86,35 +95,42 @@ font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
-.movie-image{
+
+.movie-image {
     height: 30vh;
 }
-.details{
+
+.details {
     display: flex;
     flex-direction: column;
     width: 20vw;
     gap: 12px;
-   border-radius: 6px;
-   padding: 10px;
+    border-radius: 6px;
+    padding: 10px;
 }
-.body-all{
+
+.body-all {
     display: flex;
     justify-content: space-around;
 }
-input{
+
+input {
     height: 40px;
     color: black;
-border-radius: 6px;
+    border-radius: 6px;
 }
-label{
+
+label {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.purchase-btn{
+
+.purchase-btn {
     display: flex;
     justify-content: center;
 }
-.checkout{
+
+.checkout {
     height: 40px;
     width: 10vw;
     color: white;
@@ -125,10 +141,12 @@ label{
     border-radius: 8px;
     cursor: pointer;
 }
-.checkout:hover{
+
+.checkout:hover {
     background-color: violet;
 }
-.remove-btn{
+
+.remove-btn {
     height: 40px;
     width: 10vw;
     color: white;
@@ -141,6 +159,7 @@ label{
     margin-top: 10px;
 
 }
-.remove-btn:hover{
+
+.remove-btn:hover {
     background-color: violet;
 }

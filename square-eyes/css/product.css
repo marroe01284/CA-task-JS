@@ -8,11 +8,13 @@ body {
     background-color: black;
     min-height: 100vh;
 }
-nav{
+
+nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 3rem;
 }
+
 nav ul {
     width: 100%;
     list-style: none;
@@ -21,11 +23,13 @@ nav ul {
     align-items: center;
     gap: 3rem;
 }
-.cart{
+
+.cart {
     display: flex;
     align-items: center;
     padding-right: 2rem;
 }
+
 .sidebar {
     list-style-type: none;
     padding: 0;
@@ -49,11 +53,13 @@ nav ul {
 .sidebar a:hover {
     color: blueviolet;
 }
-svg{
+
+svg {
     width: 20px;
     height: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -74,7 +80,8 @@ a{
 .container {
     display: flex;
 }
-button{
+
+button {
     height: 40px;
     width: 100%;
     border-radius: 8px;
@@ -86,10 +93,12 @@ button{
     cursor: pointer;
     border: none;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(180, 127, 229);
 }
-.cartNotification{
+
+.cartNotification {
     color: white;
     display: flex;
     justify-content: center;
