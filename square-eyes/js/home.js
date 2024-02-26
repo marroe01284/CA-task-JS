@@ -3,6 +3,10 @@ const filterButtonsContainer = document.getElementById("filterButtons");
 const cartNotification = document.getElementById("cartNotification")
 let cartItemCount = 0;
 displayMovies();
+setTimeout(() => {
+    document.getElementById("loadingScreen").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}, 2000);
 
 function displayMovies() {
     fetch("https://api.noroff.dev/api/v1/square-eyes")
@@ -64,7 +68,6 @@ function createGenreButtons(movies) {
     showAllButton.onclick = () => displayAllMovies();
     filterButtonsContainer.appendChild(showAllButton);
 }
-
 
 function filterMovies(genre) {
     fetch("https://api.noroff.dev/api/v1/square-eyes")
