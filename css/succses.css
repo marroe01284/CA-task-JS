@@ -43,7 +43,6 @@ nav ul {
     background-color: #000000;
 }
 
-/* Styling for sidebar links */
 .sidebar li {
     padding: 10px;
     text-align: center;
@@ -115,7 +114,6 @@ p {
 
 .content {
     display: none;
-    /* Initially hide content */
     text-align: center;
     margin-top: 50px;
 }
